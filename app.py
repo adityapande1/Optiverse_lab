@@ -38,6 +38,13 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
+# Wide page setting filling complete window
+st.set_page_config(
+    page_title="Optiverse Lab",
+    layout="wide",   # 👈 makes it full width
+    initial_sidebar_state="collapsed"  # optional: hide sidebar by default
+)
+
 # --- Create buttons ---
 col1, col2 = st.columns([1, 1])
 with col1:
